@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(35, 16, 143);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  
+  color: rgb(110, 104, 170);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(55, 4, 238);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* ________________________________________ */
+body  {
+  background-image: url("https://www.xmple.com/wallpaper/white-gradient-blue-linear-1920x1080-c2-add8e6-fffafa-a-60-f-14.svg");
+ 
+}
+/* ___________________________________________ */
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <div class="dropdown">
+    <button class="dropbtn">About 
+        <i class="fa fa-caret-down"></i>
+    </button>
+      <div class="dropdown-content">
+        <a href="management.html">Management</a>
+        <a href="vision.html">Vision</a>
+        <a href="about.html">About</a>
+      </div>
+    </div> 
+    <a href="corInforIT.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+<!-- ________________________________________ -->
+<div class="manage">
+    <center>
+   <img src="https://totalofficeconcepts.com/wp-content/uploads/2017/06/32406776_l-crop-669.jpg" 
+   style="width:80%;height:300px;">
+</center>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+<div class="container">
+    <h2>About - US</h2>
+<div class="btn-group-vertical">
+        <a href="management.html" class="btn btn-primary">Management</a>
+        <a href="vision.html" class="btn btn-primary">Vision</a>
+        <a href="about.html" class="btn btn-primary">About Company</a>
+</div>
+</div>
+</div>
+<br>
+<div class="col-sm-6">
+        <div class="container">
+  
+                <div class="container">     
+                  <div class="row">
+                    <div class="col-sm-4">
+                    <div class="card">
+                <img src="anil.jpg" alt="Managing Director" style="width:100%;height:200px">
+                <h1>K.Anil Kumar</h1>
+                <p class="title">Managing Director</p>
+                
+              
+              </div>
+                     </div>
+                    <div class="col-sm-6">
+                  <em><h4 style="font-family: serif;">With vast experience in the construction Industry,K.Anil Kumar,an Engineering Graduate from the
+                Indian Institute of Management.New Delhi;leads his team to bring exceptional value to every project.</h4></em>
+                <br>
+                <em><h4 style=" font-family: 'Times New Roman', Times, serif;">His expertise in the fields of both Consulting & in contracting fields is reflected int he important
+                ptojects handled by him,which includes construction of office space for XF [a global technology company 
+                and supplies system for passenger cars,commercial vehicles and industrial technology,enabling the next
+                 generation of mobility],DELL,VIP 5th phase - Vega block,Sierra Atlantic [presently known as Hitachi
+                 Consultancy] etc.All these are iconic buildings are owned by reputed IT companies
+              </h4></em>      
+              </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="row">
+                      <div class="col-sm-4">
+                      <div class="card">
+                  <img src="kreddy.jpg" alt="John" style="width:100%;height:200px">
+                  <h1>K.Karunaka Reddy</h1>
+                  <p class="title">Head Projects</p>
+                  
+                
+                </div>
+                       </div>
+                      <div class="col-sm-6">
+                    <em><h4 style="font-family: serif;">Mr.Karunakar Reddy,a Civil Engineering graduate from CBIT - Hyderabad - focuses on the technical
+                      aspects of the project.
+                    </h4></em>
+                  <br>
+                  <em><h4 style=" font-family: 'Times New Roman', Times, serif;">
+                    He has sound experience in the field of construction. Some of the projects handled by him includes
+                    construction of Lemon tree Hotel,Ilabs building,Cap Gemini IT park @ Gachibowli etc. Hehas played a 
+                    major role in the success of the companies he worked for.
+                </h4></em>      
+                </div>
+                    </div>
+                  
+                </div>
+              </div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

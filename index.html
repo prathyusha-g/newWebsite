@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(35, 16, 143);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  
+  color: rgb(110, 104, 170);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(55, 4, 238);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* ______________________________________________ */
+
+</style>
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <div class="dropdown">
+    <button class="dropbtn">About 
+        <i class="fa fa-caret-down"></i>
+    </button>
+      <div class="dropdown-content">
+        <a href="management.html">Management</a>
+        <a href="vision.html">Vision</a>
+        <a href="about.html">About</a>
+      </div>
+    </div> 
+    <a href="corInforIT.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+<!-- _________________________________________________ -->
+
+<div class="container"> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="c4.jpg" alt="Los Angeles" style="width:100%;height:500px">
+        </div>
+  
+        <div class="item">
+          <img src="c5.jpg" alt="Chicago" style="width:100%;height:500px">
+        </div>
+      
+        <div class="item">
+          <img src="c6.jpg" alt="New york" style="width:100%;height:500px">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+  
+
+  <!-- ______________________________________________ -->
+
+
+<h3 style="color:firebrick;text-decoration: underline;text-align: center">When Your Business Needs Space to Grow...</h3>
+
+<p style="text-align: center">Space is the basic need for any organization - be it an IT park,a mall,an office,
+a hospital or just your friendly neighbourhood restaurant.</p>
+<p style="text-align: center">Elegant Interiors, as the name suggests, is a premier space designer and creater, which can
+    create it for you just the way you wanted it.
+</p>
+<p style="text-align: center">
+    From a Greenfield project - where you start with a plot of land or just interiors in a floor of an existing building,
+    a hospital, an educational institution or just about any space -<br>
+    Elegant Interiors can do it all - saving for you the time & effort which you could better spend in 
+    <br>promoting your core bussiness.
+</p>
+<p style="text-align: center">
+    The Creative Space team has substantial experience of assisting asset owners and stakeholders to convert their vision<br>
+    & Business Plans into successful and sustainable projects.
+</p>
+
+<br>
+<br>
+<div class="container">      
+        <div class="row">
+          <div class="col-sm-6" >
+            <h2>Experience</h2>
+            <br>
+            Founded in 2017,Elegant Interiors is one among the fast growing companies,providing corporate interior design , turkey interiors,<br>
+            civil & interior services,MEP services,general contracting services and imported furniture.With India becoming the preferred destination <br>
+            for companies from all over the world.
+          </div>
+          <div class="col-sm-6" >
+                <i style="font-size: 35px" class="fa fa-users" aria-hidden="true"><h2>Our Team</h2></i>
+                <br>
+                Having a strong presence in twin cities,our team consits of highly skiller professionals<br>
+                such as Architects,Engineers,Chartered Accountants , Company Secretaries & Auditors,
+                <br>Procurement team and disaster management certified project managers to give business a
+                technical edge.
+          </div>
+        </div>
+      </div>
+</body>
+</html>

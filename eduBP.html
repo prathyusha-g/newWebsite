@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(35, 16, 143);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  
+  color: rgb(110, 104, 170);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(55, 4, 238);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* ______________________________________________________ */
+
+body  {
+  background-image: url("https://www.xmple.com/wallpaper/white-gradient-blue-linear-1920x1080-c2-add8e6-fffafa-a-60-f-14.svg");
+ 
+}
+
+/* ______________________________________________________________ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li{
+    width:50%;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  background-color: #f1f1f1;
+  height: 550px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ______________________________________________________________ */
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+#expandedImg{
+  border-radius: 25px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 9px;
+  right: 300px;
+  color: red;
+  font-size: 40px;
+  cursor: pointer;
+}
+.image-row{
+  padding:20px;
+}
+
+.outset {outline-style: outset;
+  outline-color:rgb(160, 155, 243);
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">About 
+      <i class="fa fa-caret-down"></i>
+  </button>
+    <div class="dropdown-content">
+      <a href="management.html">Management</a>
+      <a href="vision.html">Vision</a>
+      <a href="about.html">About</a>
+    </div>
+  </div> 
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="projects">
+<center>
+<img src="https://www.chitkara.edu.in/wp-content/uploads/2019/02/INTERIOR-DESIGN1.jpg" 
+ style="width:80%;height:300px;">
+</center>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<section>
+    <nav style="margin-left: 150px">
+        <h4 style="color: crimson">Projects Completed with Interior.</h4>
+        <h5>Corporate Officies</h5>
+      <ul>
+        <li class="btn btn-info"><a style="color: cornsilk" href="corRegus.html">Regus</a></li>
+        <br>
+        <br>
+        <li class="btn btn-info"><a style="color: cornsilk" href="corInforIT.html">Infor</a></li>
+      </ul>
+      <br>
+      <h5>Educational Institutions</h5>
+      <ul>
+        <li class="btn btn-info"><a style="color: cornsilk" href="eduBP.html">Bits Pilani</a></li>
+      </ul>
+      <h5>Residential</h5>
+      <ul>
+        <li class="btn btn-info"><a style="color: cornsilk" href="resAT.html">AT & T</a></li><br>
+        <br>
+        <li class="btn btn-info"><a style="color: cornsilk" href="resComake.html">Comake</a></li><br>
+        <br>
+        <li class="btn btn-info"><a style="color: cornsilk" href="resFS.html">FlagStone</a></li><br>
+        <br>
+        <li class="btn btn-info"><a style="color: cornsilk"  href="resSierra.html">Sierra</a></li><br>
+      </ul>
+    </nav>
+    
+    <article>
+      <h3>Bits Pilani Hyderabad campus- Library block Ground & block lower Ground
+        1st floor civil & interior finishes.
+        </h3>
+      <div class="row">
+            <div class="image-row">
+              <div class="column">
+                <img class="outset" src="bits-pilani-01.jpg" alt="" style="width:80%;" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img class="outset" src="bits-pilani-02.jpg" alt="" style="width:80%" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img class="outset" src="bits-pilani-03.jpg" alt="" style="width:80%" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img class="outset" src="bits-pilani-04.jpg" alt="" style="width:80%" onclick="myFunction(this);">
+              </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="image-row">
+                  <div class="column">
+                    <img class="outset" src="bits-pilani-05.jpg" alt="" style="width:80%;" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img class="outset" src="bits-pilani-06.jpg" alt="" style="width:80%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img class="outset" src="bits-pilani-07.jpg" alt="" style="width:80%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img class="outset" src="bits-pilani-08.jpg" alt="" style="width:80%" onclick="myFunction(this);">
+                  </div>
+                </div>
+            </div>
+        <center>    
+                <div class="container">
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                  <img id="expandedImg" style="width:50%;height: 50%;">
+                  <div id="imgtext"></div>
+                </div>
+        </center>
+        <script>
+                function myFunction(imgs) {
+                  var expandImg = document.getElementById("expandedImg");
+                  var imgText = document.getElementById("imgtext");
+                  expandImg.src = imgs.src;
+                  imgText.innerHTML = imgs.alt;
+                  expandImg.parentElement.style.display = "block";
+                }
+                </script>
+    </article>
+  </section>
+
+</body>
+</html>
